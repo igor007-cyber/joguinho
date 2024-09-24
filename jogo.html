@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap" rel="stylesheet">
+    <title>Mario Game</title>
+</head>
+<body class="tela-body">
+    <header>
+    </header>
+
+    <div id="character-selection">
+        <h3>Escolha seu personagem:</h3>
+        <div class="buttons">
+            <button class="character-btn" onclick="selectCharacter('mario')">
+                <img src="images/leleko.png" alt="Mario">
+                Leleko
+            </button>
+            <button class="character-btn" onclick="selectCharacter('luigi')">
+                <img src="images/leleka.png" alt="Luigi">
+                Leleka
+            </button>
+        </div>
+    </div>
+    
+
+    <main class="game-board" style="display: none;">
+        <div class="game-status">
+            <div class="game-status">
+        <img src="images/beb_tenkit__logo.png" id="logo">
+
+                <p id="points-label">Pontos: 0 </p> <!-- Display dos pontos -->
+                <!-- mensagem de game over chamada pelo js -->
+            </div>
+        </div>
+
+        <img src="images/clouds.png" alt="imagem nuvens" class="clouds">
+        <img id="character" src="" alt="personagem" class="mario">
+        <img src="images/pipe.png" alt="imagem tubo verde" class="pipe">
+    </main>
+
+    <script defer src="jogo.js"></script>
+</body>
+</html>
